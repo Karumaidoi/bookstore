@@ -15,7 +15,7 @@ export function useCreateOrder() {
       queryClient.invalidateQueries({
         queryKey: ['books'],
       });
-      toast.success(`Order created`);
+      toast.success(`Book created`);
     },
     onError: () => {
       toast.error('Something went wrong');

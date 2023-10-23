@@ -14,7 +14,7 @@ export function useEditOrder() {
       queryClient.invalidateQueries({
         queryKey: ['books'],
       });
-      toast.success('Order updated successfully');
+      toast.success('Book updated successfully');
     },
     onError: () => {
       toast.error('Something went wrong');
